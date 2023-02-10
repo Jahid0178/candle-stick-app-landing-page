@@ -268,3 +268,45 @@ address p {
   font-size: 1.1rem;
   cursor: pointer;
 }
+
+/* Responsive */
+@media only screen and (max-width: 992px) {
+  .hero-container {
+    flex-direction: column-reverse;
+  }
+
+  .work-container {
+    flex-direction: column;
+  }
+
+  .mobile-body {
+    position: relative;
+  }
+
+  .mobile-body .mobile-screen {
+    left: 0;
+  }
+
+  .mobile-body .screen-frame {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  .hero-container h1 {
+    font-size: 2rem;
+  }
+
+  .feature-container {
+    flex-direction: column;
+  }
+
+  .news-container {
+    flex-direction: column;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+  }
+}
