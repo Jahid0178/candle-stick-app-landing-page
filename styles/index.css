@@ -15,6 +15,14 @@ a {
   color: #000;
 }
 
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin: 1rem 0;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -51,7 +59,8 @@ a {
   margin-bottom: 1.5rem;
 }
 
-section {
+section,
+footer {
   padding: 3rem 0;
 }
 
@@ -231,6 +240,31 @@ img {
   gap: 1rem;
 }
 
+.footer-logo {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.footer-header {
+  margin-bottom: 1rem;
+}
+
 .footer-container .footer-content {
   flex: 1;
+}
+
+address p {
+  margin: 1rem 0;
+}
+
+.social-link-container {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.fa-brands {
+  font-size: 1.1rem;
+  cursor: pointer;
 }
