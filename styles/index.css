@@ -112,6 +112,10 @@ nav {
   margin: 0.5rem 1rem;
 }
 
+.nav-heading {
+  display: none;
+}
+
 /* Hero section */
 
 .hero-section {
@@ -285,11 +289,8 @@ nav {
   position: relative;
   width: 300px;
   height: 430px;
-  /* box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); */
-  filter: grayscale(80%);
   transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
   border-radius: 15px;
-  /* background: linear-gradient(to right, #c31432, #240b36); */
   overflow: hidden;
 }
 .swiper .swiper-slide img {
@@ -360,6 +361,14 @@ nav {
   opacity: 0;
   cursor: auto;
   pointer-events: none;
+}
+
+.swiper-3d .swiper-slide-shadow-left {
+  background-image: none !important;
+}
+
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none !important;
 }
 
 /* News section */
@@ -490,8 +499,11 @@ address p {
     flex-direction: column;
   }
 
+  .hero-img-container {
+    display: none;
+  }
   .hero-img-container img {
-    width: 230px;
+    width: 150px;
   }
 
   .nav-links {
@@ -501,7 +513,7 @@ address p {
     height: 100vh;
     top: 8vh;
     background-color: #fff;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     transform: translateX(100%);
@@ -510,6 +522,7 @@ address p {
 
   .nav-active {
     transform: translateX(0%);
+    display: flex;
   }
 
   @keyframes navLinkFade {
@@ -523,8 +536,13 @@ address p {
     }
   }
 
+  .nav-heading {
+    display: block;
+  }
+
   .nav-links li {
     opacity: 0;
+    font-size: 1.2rem;
   }
 
   .hero-container h1 {
