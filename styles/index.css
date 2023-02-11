@@ -346,6 +346,11 @@ address p {
     flex-direction: column;
   }
 
+  .newsletter-form {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
   /* Footer */
   .footer-container {
     flex-direction: column;
