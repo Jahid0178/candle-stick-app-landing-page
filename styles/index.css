@@ -85,6 +85,29 @@ img {
   width: 100%;
 }
 
+/* Navbar section */
+header {
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+}
+
+/* Hero section */
+
 .hero-section {
   display: flex;
   align-items: center;
