@@ -63,6 +63,11 @@ input[type="submit"] {
   font-weight: 6 00;
 }
 
+.mobile-menu-btn {
+  display: none !important;
+  font-size: 1.5rem !important;
+}
+
 .heading-title {
   text-align: center;
   margin-bottom: 2rem;
@@ -302,7 +307,7 @@ nav {
   filter: none;
 }
 .swiper .swiper-pagination-bullet-active {
-  background-color: #c31432 !important;
+  background-color: #fff !important;
 }
 .swiper .swiper-pagination-bullet {
   background-color: grey;
@@ -469,6 +474,43 @@ address p {
 }
 
 @media only screen and (max-width: 688px) {
+  .mobile-menu-btn {
+    display: block !important;
+  }
+
+  .nav-links {
+    width: 100%;
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    top: 10vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
   .hero-container h1 {
     font-size: 2rem;
   }
