@@ -23,6 +23,23 @@ ul li {
   margin: 1rem 0;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  outline: 0;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  border-radius: 3rem;
+  padding: 0.5rem 1rem;
+  background: #6541c1;
+  color: #fff;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -264,9 +281,33 @@ address p {
   margin-top: 1rem;
 }
 
-.fa-brands {
+/* Newsletter section */
+.newsletter-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+}
+
+.newsletter-form-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Icons */
+
+.fa-brands,
+.fa-solid {
   font-size: 1.1rem;
   cursor: pointer;
+}
+
+.fa-envelope {
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 /* Responsive */
