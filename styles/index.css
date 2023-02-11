@@ -117,9 +117,10 @@ nav {
 .hero-section {
   display: flex;
   align-items: center;
-  background: url("https://themexriver.com/appilo-theme/main/wp-content/uploads/sites/2/2020/11/slider-bg-1.jpg")
-    no-repeat center / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/hero-bg.jpg") no-repeat center / cover;
   min-height: 100vh;
+  color: #fff;
 }
 
 .hero-container {
@@ -139,6 +140,14 @@ nav {
 
 .hero-container p {
   font-size: 1.2rem;
+}
+
+.hero-img-container {
+  text-align: center;
+}
+
+.hero-img-container img {
+  width: 550px;
 }
 
 /* Feature section */
