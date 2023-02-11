@@ -486,12 +486,20 @@ address p {
     display: block !important;
   }
 
+  .btn-group {
+    flex-direction: column;
+  }
+
+  .hero-img-container img {
+    width: 230px;
+  }
+
   .nav-links {
     width: 100%;
     position: absolute;
     right: 0px;
     height: 100vh;
-    top: 10vh;
+    top: 8vh;
     background-color: #fff;
     display: flex;
     flex-direction: column;
